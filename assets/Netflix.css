@@ -1,0 +1,101 @@
+body{
+    background-color: black;
+}
+
+div{
+    color: white;
+    text-align: center;
+    size: 5px;
+}
+
+.img:hover{
+    max-width: 100%;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+.te{
+    text-align: center;
+    /* font-size: 22px; */
+}
+.img{
+    max-width: 100%;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    transition: 1s;
+}
+.Netflix{
+    width: 30%;
+}
+.Netflix1{
+    width: 40%;
+    height: min-content;
+}
+/* .Account{
+    width: 3.8%;
+    padding-left: 95%;
+} */
+
+figcaption{
+    color: white;
+}
+nav{
+    color: antiquewhite;
+    background-color: rgb(40, 39, 39);
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border-radius: 15%; */
+}
+h6{
+    margin-top: none;
+    margin-bottom: none;
+}
+.opt:link,:visited{
+    color: white;
+    text-decoration: none;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    
+}
+select{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+.vid{
+    text-decoration: none;
+}
+ footer{
+    background-color: rgb(30, 29, 29);
+
+ }
+ #copy{
+    width: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+ }
+ p{
+    color: azure;
+    text-align: justify;
+    padding-bottom: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5px;
+ }
+ #dec{
+    text-align: right;
+    size: 1px;
+ }
+ figcaption{
+    font-size:large;
+ }
+table{
+    width: 100%;
+}
+td{
+    padding-bottom: 25px;
+}

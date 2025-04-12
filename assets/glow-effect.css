@@ -1,0 +1,80 @@
+.glow-button {
+            /* font-size: 18px; */
+            /* font-weight: bold; */
+            /* color: white; */
+            /* background-color: transparent; */
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            /* padding: 15px 40px; */
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Neon Glow Effect */
+        .glow-button::before {
+            content: "";
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #00ff00, #ff0000, #ffff00);
+            background-size: 300% 300%;
+            border-radius: inherit;
+            z-index: -1;
+            filter: blur(10px);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Button Hover Effect */
+        .glow-button:hover::before {
+            opacity: 1;
+            animation: glow-animation 1.5s infinite linear;
+        }
+
+        @keyframes glow-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Rounded Button */
+        .glow-circle {
+            padding: 40px;
+            border-radius: 50%;
+        }
+        /* Neon Glow Effect */
+        .glow-box::before {
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #00ff00, #ff0000, #ffff00);
+            background-size: 300% 300%;
+            border-radius: inherit;
+            z-index: -1;
+            filter: blur(15px);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Hover Effect */
+        .glow-box:hover::before {
+            opacity: 1;
+            animation: glow-animation 1.5s infinite linear;
+        }
+
+        /* Circular Div */
+        .glow-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
