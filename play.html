@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Netflix.css">
+    <link rel="stylesheet" href="assets/glow-effect.css">
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+    
+    <link rel="icon" href="materials/Netflix.png">
+</head>
+<body class="container-fluid">
+    <header>
+        <br>
+    <div class="row">
+        <div  class="col-md-4">
+            <a href="index.html"><img class="Netflix1" src="materials/Netflix%202.png" alt="copyright"></a>
+        </div>
+        <div class="col-md-3" style="align-self: center;">
+            <input class="search form-control"  onkeyup="search(this);" placeholder="Search in Netflix" type="search" data-toggle="dropdown">
+            <div class="dropdown-menu" id="menu"></div>
+        </div>
+        <div class="col-md-2" style="align-self: center;">
+            <button type="button"  style="width: 80%; vertical-align: bottom;" class="search glow-button btn btn-danger" >Search</button>
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="row">
+            <div class="col-md-8" id="play1"></div>
+            <div class="col-md">
+                <div class="col-md" target="_main" id="rec"></div>
+        </div>
+    </main>
+    <script src="assets/index.js"></script>
+    
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        window.onload = function () {            
+                const receivedText = getQueryParam('text');
+                const receivedTitle = getQueryParam('title');
+                
+                if (receivedText) {
+                   var output=`<video width="75%"  style="border-radius: 10px; min-width: 70%;" controls autoplay>
+                    <source src="${receivedText}"  type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                   <div class="container h3" style="color: white; text-align:left; padding-left: 120px;" id="title"></div>`
+                   document.title=receivedTitle;
+                }
+                document.getElementById("play1").innerHTML=output;
+                loadrecommend(receivedTitle);
+            };
+    </script>    
+</body>
+</html>

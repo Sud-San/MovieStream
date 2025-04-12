@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Netflix</title>
+    <link rel="icon" href="materials/Netflix.png">
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/index.js"></script>
+    <link rel="stylesheet" href="assets/glow-effect.css">
+    <link rel="stylesheet" href="login.css">
+    <style>
+      .modal-body {
+    max-height: 400px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+    </style>
+</head>
+<body id="body">    
+    
+    <div class="login-container mt-5 ">
+        <h2>Login</h2>
+        <form onsubmit="return check();" action="home.html" >
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email">
+                <span class="error" id="email-error"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password">
+                <span class="error" id="password-error"></span>
+            </div>
+            <div class="input-group">
+              <input type="checkbox" style="width: 5%; accent-color: red;" onclick="passvis();">Show Password
+            </div>
+            <div class="input-group" style="justify-content: flex-end;">
+              <a href="" >Forget Password?</a>
+          </div>
+            <button type="button" onclick="check();" class="glow-button" data-toggle="modal" data-target="#myModal">Login</button>
+            <span id="modal"></span>
+            <p class="signup">New to Netflix? <a href="sign.html">Sign up now</a></p>
+        </form>
+    </div>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+</body>
+</html>

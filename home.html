@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Netflex</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/Netflix.css">
+    <link rel="icon" href="materials/Netflix.png">
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="assets/popper.min.js"></script>
+</head>
+    <body>
+    <header>
+        <div class="row">
+            <div  class="col-md">
+                <img class="Netflix" src="materials/Netflix%202.png" alt="copyright">
+            </div>
+        </div>
+            <nav class="row">
+                <a class="col-md opt te h5" href=""> HOME</a> <span class="te">||</span> 
+                <a class="col-md opt te h5" href=""> HELP</a> <span class="te">||</span>
+                <a class="col-md opt te h5" href=""> ABOUT</a> <span class="te">||</span>
+                 <div class="col-md h5" style=" text-align: right;">
+                    REGION:
+                 </div>
+                 <div class="col-md-2">
+                <select value="select region " class="form-control">
+                    <option value="India">India</option>
+                    <option value="USA" selected="selected">USA</option>
+                    <option value="UK">UK</option>
+                    <option value="China">China</option>
+                </select>
+                 </div>
+                <div class="col-md-3">
+                    <input class="search form-control" onkeyup="search(this);" placeholder="Search in Netflix" type="search" data-toggle="dropdown">
+                    <div class="dropdown-menu" id="menu"></div>
+                </div>
+                <div class="col-md">
+                    <button style="width: 80%;" class="search btn btn-danger">Search</button>
+                </div>
+             </nav>
+        </header>
+        <br>
+    <main class="container-fluid" id="mst"></main>
+    
+    <footer class="container-fluid">
+        <p id="dec">ProtoType Made In India</p>
+        <img id="copy" src="materials/c1.png">
+        <p id="copytext">A copyright disclaimer asserts your legal right to own the website you
+            created, and it can help deter people from stealing content from that
+            website. It makes it clear who owns this website and that they're
+            willing to protect their right to its contents.<br><br>
+            The copyright disclaimer typically has four parts: the copyright
+            symbol, the year of the page's publication, the name of the website's
+            owner, and a statement reserving the rights of the site's owners to the
+            site's content. The last part is optional, although it's encouraged for
+            clarity and completeness. </p>
+</footer>
+
+<script src="assets/index.js"></script>
+<script>
+    window.onload = function () {
+                display();  // Ensure these functions exist in index.js
+    };
+</script>
+</body>
+</html>

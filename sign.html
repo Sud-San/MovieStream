@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Netflix</title>
+    <link rel="icon" href="materials/Netflix.png">
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="assets/glow-effect.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form" onsubmit="return check1();" action="login.html">
+            <input class="sign-input" type="text" id="name" placeholder="Full Name" >
+            <input class="sign-input" type="email" id="email" placeholder="Email" >
+            <input class="sign-input" type="password" id="password" placeholder="Password" >
+            <input class="sign-input" type="password" id="confirm-password" placeholder="Confirm Password" >
+            <button type="submit" class="glow-button">Sign Up</button>
+            <p class="error-message"></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+#body { 
+    background-image: url("materials/4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: #181818; */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.login-container {
+    background-color: rgba(34, 34, 34, 0.8);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 400px;
+    margin-top: 80px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: rgb(185, 8, 8);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.signup {
+    margin-top: 10px;
+}
+.signup-container {
+    background: rgba(34, 34, 34, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 400px;
+    text-align: center;
+    margin-top: 80px;
+}
+.sign-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
